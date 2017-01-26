@@ -1,0 +1,240 @@
+JUEGO DE PRUEBAS PÚBLICO
+------------------------
+
+Entrada comentada:
+------------------
+
+6                                      //N: número de niveles de calidad
+
+ropa pantalon corto nike . .  	       //Estructura de las áreas temáticas
+222 . . largo 555 nike . . 666 . .     //La marca será un string "."
+888 777 . . adidas . .
+camiseta jersey 666 . . 222 . .
+abrigo invierno adidas . . 333 . .
+verano 444 . . 333 . .
+ 
+
+-5 summer 	// Consultar la revista con título summer
+
+-1 moda 222 nike . 3
+			//Dar de alta una revista de título
+			//moda que tiene como palabras clave,
+			//222 y nike.
+			//El final de las palabras clave se marca con el
+			//string "." Su nivel de calidad es 3
+
+-1 summer 333 444 . 2
+
+-2 summer 	//Dar de baja una revista de título summer
+
+-1 futbol adidas . 4
+
+-1 basquet 222 444 . 1
+
+-1 publicidad 333 nike . 4
+
+-5 futbol
+
+-4 5 1 			// Consultar las revistas de nivel 5 por orden 
+                        // de área según el criterio 1 
+
+-1 summer_festival 444 . 1
+
+-4 4 2			// Consultar las revistas de nivel 4 por orden
+			// de área según criterio 2
+-4 1 1
+
+-4 1 2
+
+-3 fubtol publicidad  //Fusiona dos revistas con títulos futbol y publicidad
+
+-5 futbol 
+
+-5 balonmano
+
+-4 4 1
+
+-3 summer_festival basquet
+
+-5 summer_festival
+
+-1 munich nike . 4
+
+-2 summer_festival
+
+-4 4 1
+
+-4 4 2
+ 
+-6
+
+
+Entrada sin comentar:
+---------------------
+
+6
+
+ropa pantalon corto nike . .  	       
+222 . . largo 555 nike . . 666 . .
+888 777 . . adidas . .
+camiseta jersey 666 . . 222 . .
+abrigo invierno adidas . . 333 . .
+verano 444 . . 333 . .
+
+-5 summer
+
+-1 moda 222 nike . 3
+
+-1 summer 333 444 . 2
+
+-2 summer
+
+-1 futbol adidas . 4
+
+-1 basquet 222 444 . 1
+
+-1 publicidad 333 nike . 4
+
+-5 futbol
+
+-4 5 1 			 
+
+-1 summer_festival 444 . 1
+
+-4 4 2			
+
+-4 1 1
+
+-4 1 2
+
+-3 fubtol publicidad
+
+-5 futbol
+
+-5 balonmano
+
+-4 4 1
+
+-3 summer_festival basquet
+
+-5 summer_festival
+
+-1 munich nike . 4
+
+-2 summer_festival
+
+-4 4 1
+
+-4 4 2
+ 
+-6
+
+
+Salida comentada:
+-----------------
+
+Consulta de revista por título
+La revista summer no existe
+// Consulta de la revista summer: en este caso la revista no existe
+
+Consulta de revista por titulo     // Consulta de la revista fubtol
+futbol		                   // Título en una línea
+adidas		                   // Todas las palabras clave en una línea
+adidas ropa		           // Las dos áreas temáticas en una línea
+4                                  // Nivel de calidad en una línea
+
+Revistas de calidad 5 por criterio 1 // No hay ninguna revista que tenga 
+                                     // el nivel de calidad 3
+
+Revistas de calidad 4 por criterio 2     // Consulta de las revistas 
+ropa futbol		       		 // de calidad 4, criterio 2:
+ropa publicidad	          		 // área + título
+// (ordenadas en orden alfabético de área y, dentro de cada área, por título)
+
+Revistas de calidad 1 por criterio 1
+444 summer_festival
+camiseta basquet
+
+Revistas de calidad 1 por criterio 2
+444 summer_festival
+ropa basquet
+
+Consulta de revista por título
+futbol
+333 adidas nike 
+ropa ropa
+4
+
+Consulta de revista por título
+La revista balonmano no existe
+
+Revistas de calidad 4 por criterio 1
+ropa futbol
+
+Consulta de revista por título
+summer_festival
+222 444
+camiseta ropa
+1
+
+Revistas de calidad 4 por criterio 1
+nike munich
+ropa futbol
+
+Revistas de calidad 4 por criterio 2
+pantalon munich
+ropa futbol
+
+
+Salida sin comentar:
+--------------------
+
+Consulta de revista por título
+La revista summer no existe
+
+Consulta de revista por titulo     
+futbol		                   
+adidas	                   
+adidas ropa		           
+4                                  
+
+Revistas de calidad 5 por criterio 1  
+                                     
+
+Revistas de calidad 4 por criterio 2     
+ropa futbol 		       		 
+ropa publicidad          		 
+
+Revistas de calidad 1 por criterio 1
+444 summer_festival
+camiseta basquet
+
+Revistas de calidad 1 por criterio 2
+444 summer_festival
+ropa basquet
+
+Consulta de revista por título
+futbol
+333 adidas nike 
+ropa ropa
+4
+
+Consulta de revista por título
+La revista balonmano no existe
+
+Revistas de calidad 4 por criterio 1
+ropa futbol
+
+Consulta de revista por título
+summer_festival
+222 444
+camiseta ropa
+1
+
+Revistas de calidad 4 por criterio 1
+nike munich
+ropa futbol
+
+Revistas de calidad 4 por criterio 2
+pantalon munich
+ropa futbol

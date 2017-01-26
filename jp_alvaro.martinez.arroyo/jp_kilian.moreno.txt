@@ -1,0 +1,125 @@
+JUEGO DE PRUEBAS PRIVADO
+----------------------------
+ENTRADA COMENTADA
+----------------------------
+8									//N: número de niveles de calidad
+
+videojuegos infantiles dibujos pokemon . .				//Estructura de las áreas temáticas
+zelda zelda_uno . . zelda_dos zelda_dos_uno . . .			//La marca será el string "."
+cochesa nfsa nfsuno . . . .
+adultos guerra arcade callofduty . . .
+simuladores battlefield battlefield_uno battlefield_uno_uno . . .
+battlefield_dos . . .
+cochesb nfsb nfsuno . . . juiced . .
+
+-5 nfsuno_uno								//Consultar la revista con título nfsuno_uno
+
+-1 nfsuno_uno nfsuno . 8						// Dar de alta una revista de título
+                             						// nfsuno_uno con una única palabra clave,
+                             						// que es nfsuno.
+                             						// El final de las palabras clave se marca con el
+                             						// string "." Su nivel de calidad es 8
+
+-1 nfsuno_dos juiced . 7
+
+-5 nfsuno_uno
+
+-4 8 1									// Consultar las revistas de nivel 8 por orden 
+                         						// de área según el criterio 1
+
+-4 8 2									// Consultar las revistas de nivel 8 por orden 
+                         						// de área según el criterio 2
+
+-3 nfsuno_uno nfsuno_dos						//Fusionar las revistas con título
+									//nfsuno_uno y nfsuno_dos
+
+-5 nfsuno_uno
+
+-2 nfsuno_uno								//Borrar la revista con título nfsuno_uno
+
+-6
+
+----------------------------
+ENTRADA SIN COMENTAR
+----------------------------
+
+8
+
+videojuegos infantiles dibujos pokemon . .
+zelda zelda_uno . . zelda_dos zelda_dos_uno . . .
+cochesa nfsa nfsuno . . . .
+adultos guerra arcade callofduty . . .
+simuladores battlefield battlefield_uno battlefield_uno_uno . . .
+battlefield_dos . . .
+cochesb nfsb nfsuno . . . juiced . .
+
+-5 nfsuno_uno
+
+-1 nfsuno_uno nfsuno . 8
+
+-1 nfsuno_dos juiced . 7
+
+-5 nfsuno_uno
+
+-4 8 1
+
+-4 8 2
+
+-3 nfsuno_uno nfsuno_dos
+
+-5 nfsuno_uno
+
+-2 nfsuno_uno
+
+-6
+
+----------------------------
+SALIDA COMENTADA
+----------------------------
+Consulta de revista por titulo
+La revista nfsuno_uno no existe
+// Consulta de la revista nfsuno_uno: en este caso la revista no existe
+
+Consulta de revista por titulo 		//Consulta de la revista con título nfsuno_uno
+nfsuno_uno				//Título en una línea
+nfsuno					//Todas las palabras clave en una línea
+nfsuno videojuegos			//Las dos áreas temáticas en una línea
+8					//Nivel de calidad en una línea
+
+Revistas de calidad 8 por criterio 1	//Consulta de las revistas
+nfsuno nfsuno_uno			//de calidad 8, criterio 1
+
+Revistas de calidad 8 por criterio 2	//Consulta de las revistas
+videojuegos nfsuno_uno			// de calidad 8, criterio 2
+
+Consulta de revista por titulo
+nfsuno_uno
+juiced nfsuno
+cochesb videojuegos
+8
+
+--------------------------------
+SALIDA SIN COMENTAR
+--------------------------------
+Consulta de revista por titulo
+La revista nfsuno_uno no existe
+
+Consulta de revista por titulo
+nfsuno_uno
+nfsuno
+nfsuno videojuegos
+8
+
+Revistas de calidad 8 por criterio 1
+nfsuno nfsuno_uno
+
+Revistas de calidad 8 por criterio 2
+videojuegos nfsuno_uno
+
+Consulta de revista por titulo
+nfsuno_uno
+juiced nfsuno
+cochesb videojuegos
+8
+
+

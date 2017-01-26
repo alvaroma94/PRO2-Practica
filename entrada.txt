@@ -1,0 +1,59 @@
+3
+
+dc heroi superman salvar_el_mon lliga_herois america capitalisme anarquia . . . guanyar . . unitat herois . . justicia . . lluitar perdre . joker . . guanyar . . alien logica . . 
+superhuma . . wonderwoman mitologia superhuma . . grega . . dona justicia . . honor . . antiherois batman amics oraculo . . robin logica . . herois . . enemics joker . . 
+pinguino . fosc . . v_for_vendetta politica fosc . . anglaterra . . anarquia . .
+
+-1 jla honor superhuma . 1
+
+-5 jla
+
+-1 louis_lane justicia logica . 1
+
+-3 louis_lane jla
+
+-5 louis_lane
+
+-2 louis_lane
+
+-4 2 1
+
+-5 thor
+
+-1 amazona grega honor . 2
+
+-1 rorschach anarquia herois . 1
+
+-5 rorschach
+
+-4 2 1
+
+-4 2 2
+
+-1 batwoman fosc herois . 1 
+
+-1 harley joker . 1
+
+-4 1 1
+
+-4 1 2
+
+-1 alan_moore anarquia anglaterra fosc . 3
+
+-1 la_broma_asesina joker oraculo . 1
+
+-4 1 1
+
+-3 la_broma_asesina harley
+
+-3 alan_moore la_broma_asesina 
+
+-5 alan_moore
+
+-1 george_perez honor justicia grega . 3
+
+-4 3 1
+
+-4 3 2
+
+-6

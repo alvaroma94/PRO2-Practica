@@ -1,0 +1,93 @@
+\hypertarget{pro2_8cpp}{\section{Referencia del Archivo pro2.\-cpp}
+\label{pro2_8cpp}\index{pro2.\-cpp@{pro2.\-cpp}}
+}
+Dependencia gráfica adjunta para pro2.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{pro2_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{pro2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\hypertarget{pro2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{pro2.\-cpp@{pro2.\-cpp}!main@{main}}
+\index{main@{main}!pro2.cpp@{pro2.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{pro2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Definición en la línea 5 del archivo pro2.\-cpp.
+
+
+\begin{DoxyCode}
+5           \{
+6     \textcolor{keywordtype}{int} N = readint();
+7     \hyperlink{class_biblioteca}{Biblioteca} b (N);
+8     \hyperlink{class_esquema}{Esquema} e;
+9     e.\hyperlink{class_esquema_ad6c7e82a2322bd19412efa51d2005ede}{leer\_esquema}();
+10     
+11     \textcolor{keywordtype}{int} op;  \textcolor{comment}{//Código de operación}
+12     op = readint();
+13     \textcolor{keywordflow}{while} (op != -6)\{
+14   \textcolor{keywordflow}{if} (op == -1)\{
+15       \hyperlink{class_revista}{Revista} r;
+16       r.\hyperlink{class_revista_a61178cb7b236db9a3354d5d00df1b31b}{leer\_revista}();
+17       \textcolor{keywordtype}{int} calidad = readint();
+18       e.\hyperlink{class_esquema_a2a237e94381f752b6f5cb582987b0570}{calcular\_c1}(r);
+19       e.\hyperlink{class_esquema_a50c270ca5ba9dbd129fe047fb7a18363}{calcular\_c2}(r);
+20       b.alta\_revista(r, calidad);
+21   \}
+22   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == -2)\{
+23       \textcolor{keywordtype}{string} s = readstring();
+24       b.baja\_revista(s);
+25   \}
+26   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == -3)\{
+27       \textcolor{keywordtype}{string} s1 = readstring();
+28       \textcolor{keywordtype}{string} s2 = readstring();
+29       \hyperlink{class_revista}{Revista} r1, r2;
+30       \textcolor{keywordtype}{int} i1 = 0;
+31       \textcolor{keywordtype}{int} i2 = 0;
+32       \textcolor{keywordtype}{bool} b1 = \textcolor{keyword}{false};
+33       \textcolor{keywordtype}{bool} b2 = \textcolor{keyword}{false};
+34       b.consultar\_revista(s1, r1, i1, b1);
+35       b.consultar\_revista(s2, r2, i2, b2);
+36       b.baja\_revista(s1);
+37       b.baja\_revista(s2);
+38       r1.\hyperlink{class_revista_a039821163b9175aa556d94b6d7fd6f63}{fusionar\_revista}(r2);
+39       e.\hyperlink{class_esquema_a2a237e94381f752b6f5cb582987b0570}{calcular\_c1}(r1);
+40       e.\hyperlink{class_esquema_a50c270ca5ba9dbd129fe047fb7a18363}{calcular\_c2}(r1);
+41       b.alta\_revista(r1, i1);
+42   \}
+43   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == -4)\{
+44       \textcolor{keywordtype}{int} calidad = readint();
+45       \textcolor{keywordtype}{int} criterio = readint();
+46       cout << \textcolor{stringliteral}{"Revistas de calidad "} << calidad << \textcolor{stringliteral}{" por criterio "} << criterio << endl;
+47       b.listar\_revistas(calidad, criterio);
+48       cout << endl;
+49   \}
+50   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == -5)\{
+51       cout << \textcolor{stringliteral}{"Consulta de revista por titulo"} << endl;
+52       \textcolor{keywordtype}{string} s = readstring();
+53       \hyperlink{class_revista}{Revista} r;
+54       \textcolor{keywordtype}{bool} b1 = \textcolor{keyword}{false};
+55       \textcolor{keywordtype}{int} i = 0;
+56       b.consultar\_revista(s, r, i, b1);
+57       \textcolor{keywordflow}{if} (b1)\{
+58     r.\hyperlink{class_revista_a22abd6f25251e007e5e08bfd11d060a0}{escribir\_revista}();
+59     cout << i << endl;
+60       \}
+61       \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"La revista "} << s << \textcolor{stringliteral}{" no existe"} << endl; 
+62       cout << endl;
+63   \}
+64   op = readint();
+65     \}
+66 \}\end{DoxyCode}

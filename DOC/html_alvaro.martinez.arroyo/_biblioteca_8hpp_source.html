@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Practica de PRO2. Gestion de revistas cientificas.: Fichero Fuente Biblioteca.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Practica de PRO2. Gestion de revistas cientificas.
+   &#160;<span id="projectnumber">version dic-2013</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Biblioteca.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_biblioteca_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef BIBLIOTECA_HPP</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BIBLIOTECA_HPP</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_esquema_8hpp.html" title="Especificacion de la clase Esquema. ">Esquema.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_revista_8hpp.html" title="Especificacion de la clase Revista. ">Revista.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">* Clase Biblioteca</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="class_biblioteca.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_biblioteca.html" title="Representa una coleccion de revistas. ">Biblioteca</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="struct_biblioteca_1_1_a1.html">   25</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_biblioteca_1_1_a1.html" title="A1 es un struct que contiene por un lado una lista de revistas (L1) y por otro lado una lista de pair...">A1</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="struct_biblioteca_1_1_a1.html#a5aa560f4da33b9157b1b69c974de59c2">   29</a></span>&#160;  list&lt;Revista&gt; <a class="code" href="struct_biblioteca_1_1_a1.html#a5aa560f4da33b9157b1b69c974de59c2" title="Lista de revistas. ">L1</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="struct_biblioteca_1_1_a1.html#a8463b0647409ec910cfdbf7fdaaa86b2">   33</a></span>&#160;  list&lt;pair&lt;string, string&gt; &gt; <a class="code" href="struct_biblioteca_1_1_a1.html#a8463b0647409ec910cfdbf7fdaaa86b2" title="Lista de pairs de strings. ">L2</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_biblioteca.html#a83688a3fd707fd8671178e82d7c53f6e">   37</a></span>&#160;    vector&lt;A1&gt; <a class="code" href="class_biblioteca.html#a83688a3fd707fd8671178e82d7c53f6e" title="biblioteca es un vector de A1 ">biblioteca</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">/* Constructoras */</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="class_biblioteca.html#a021f69adcc57a5d04e6e12532a684e2b" title="Creadora por defecto. ">Biblioteca</a> (<span class="keywordtype">int</span> N);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="comment">/* Destructoras */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="class_biblioteca.html#ae3f55e8952ed4bdddb82ece48c52f6c0" title="Destructora por defecto. ">~Biblioteca</a> ();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">/* Modificadoras */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_biblioteca.html#a3a699f219da645b8c461d1d07dbf6c76" title="Anade la Revista r a la Biblioteca. ">alta_revista</a> (<a class="code" href="class_revista.html" title="Representa el cojunto de caracteristicas y operaciones de las revistas. ">Revista</a> &amp;r, <span class="keywordtype">int</span> N);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_biblioteca.html#a3a5acce11e50bd1c262dabe293567b48" title="Elimina la Revista que tiene por nombre s de la Biblioteca. ">baja_revista</a> (<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;s);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">/* Consultoras */</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_biblioteca.html#a44e062939e33e5da4743da5197b971f7" title="Consulta la informacion de la Revista que tiene por nombre s. ">consultar_revista</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s, <a class="code" href="class_revista.html" title="Representa el cojunto de caracteristicas y operaciones de las revistas. ">Revista</a>&amp; r, <span class="keywordtype">int</span>&amp; i, <span class="keywordtype">bool</span>&amp; b) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">/* Lectura y escritura */</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_biblioteca.html#a1560e54ae8e81b7c0190b636278af7b5" title="Operacion de escritura. ">listar_revistas</a> (<span class="keywordtype">int</span> N, <span class="keywordtype">int</span> criterio);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_biblioteca.html#a01cd1e76edd489bdfc49f112129860ba" title="Elimina la Revista que tiene por nombre s de la Biblioteca. ">eliminar_revista</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;s, <span class="keywordtype">bool</span> &amp;eliminada, <span class="keywordtype">int</span> i); </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Domingo, 8 de Diciembre de 2013 19:57:07 para Practica de PRO2. Gestion de revistas cientificas. por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

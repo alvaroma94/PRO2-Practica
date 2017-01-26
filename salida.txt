@@ -1,0 +1,59 @@
+Consulta de revista por titulo
+jla
+honor superhuma 
+wonderwoman heroi
+1
+
+Consulta de revista por titulo
+louis_lane
+honor justicia logica superhuma 
+heroi dc
+1
+
+Revistas de calidad 2 por criterio 1
+
+Consulta de revista por titulo
+La revista thor no existe
+
+Consulta de revista por titulo
+rorschach
+anarquia herois 
+lliga_herois dc
+1
+
+Revistas de calidad 2 por criterio 1
+wonderwoman amazona
+
+Revistas de calidad 2 por criterio 2
+wonderwoman amazona
+
+Revistas de calidad 1 por criterio 1
+batman batwoman
+joker harley
+lliga_herois rorschach
+
+Revistas de calidad 1 por criterio 2
+dc batwoman
+dc harley
+dc rorschach
+
+Revistas de calidad 1 por criterio 1
+batman batwoman
+batman la_broma_asesina
+joker harley
+lliga_herois rorschach
+
+Consulta de revista por titulo
+alan_moore
+anarquia anglaterra fosc joker oraculo 
+antiherois dc
+3
+
+Revistas de calidad 3 por criterio 1
+antiherois alan_moore
+wonderwoman george_perez
+
+Revistas de calidad 3 por criterio 2
+dc alan_moore
+heroi george_perez
+
